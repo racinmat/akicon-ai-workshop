@@ -73,3 +73,9 @@ Stahněte si: https://github.com/NVlabs/stylegan/archive/master.zip
 
 Spuštěním `pretrained_example.py` vygenerujete lidskou fotku.
 Spuštěním `pretrained_examples.py` vygenerujete 1000 anime obrázků.
+
+https://open_nsfw.gitlab.io/ musím nějak zmínit, to je dokonalý
+
+# todo: vyzkoušet https://github.com/halcy/stylegan/blob/master/Stylegan-Generate-Encode.ipynb
+# todo: určitě musím vyzkoušet https://github.com/halcy/stylegan/blob/master/Stylegan-Interactive-Modification.ipynb
+# todo: projít kde všude jsou v stylegan repu změny od halcy, abych je zamergeoval sem, kvůli tomu padá interaktivní notebook
