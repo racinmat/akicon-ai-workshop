@@ -71,11 +71,21 @@ Detailní návod: https://www.gwern.net/Faces
 Stahněte si: https://github.com/NVlabs/stylegan/archive/master.zip
 (nebo přes git, pokud s ním umíte)
 
-Spuštěním `pretrained_example.py` vygenerujete lidskou fotku.
-Spuštěním `pretrained_examples.py` vygenerujete 1000 anime obrázků.
+Spuštěním `python pretrained_example.py` vygenerujete lidskou fotku.
+Spuštěním `python pretrained_example_anime.py` vygenerujete anime obrázek.
+Spuštěním `python pretrained_examples.py` vygenerujete 1000 anime obrázků.
 
-https://open_nsfw.gitlab.io/ musím nějak zmínit, to je dokonalý
+### Generování textů
 
-# todo: vyzkoušet https://github.com/halcy/stylegan/blob/master/Stylegan-Generate-Encode.ipynb
-# todo: určitě musím vyzkoušet https://github.com/halcy/stylegan/blob/master/Stylegan-Interactive-Modification.ipynb
-# todo: projít kde všude jsou v stylegan repu změny od halcy, abych je zamergeoval sem, kvůli tomu padá interaktivní notebook
+Vygenerování textu nepodmíněně
+```
+python src/generate_unconditional_samples.py --top_k 40 --temperature 0.9 --nsamples 2 --seed 0 --model_name monogatari
+python src/generate_unconditional_samples.py --top_k 40 --temperature 0.9 --nsamples 2 --seed 0 --model_name mnaruto
+python src/generate_unconditional_samples.py --top_k 40 --temperature 0.9 --nsamples 2 --seed 0 --model_name overlord
+```
+
+Podmíněné generování textu
+```
+python src/interactive_conditional_samples.py --top_k 40 --temperature 0.9  --seed 2000 --model_name monogatari
+```
+
