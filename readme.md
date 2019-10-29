@@ -4,6 +4,7 @@
 Zdrojové kódy naleznete zde
 - https://github.com/racinmat/stylegan
 - https://github.com/racinmat/gpt-2
+
 jsou to forky větších repozitářů s úpravami, aby inference běžela na CPU, a se skripty na parsování titulkůl pro tvorbu datasetů.
 
 ## Naučené modely
