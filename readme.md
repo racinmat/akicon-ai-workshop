@@ -64,6 +64,16 @@ Compute capability 3.0:
     - GTX 750, 760, 770
     - GTX 600 generace - vše
     
+### Potřebné knihovny
+stylegan: 
+```
+pip install moviepy
+```
+gpt-2:
+```
+pip install fire toposort
+```
+
 ### Generování anime obličejů
 StyleGAN repozitář: https://github.com/NVlabs/stylegan
 Detailní návod: https://www.gwern.net/Faces
@@ -80,7 +90,7 @@ Spuštěním `python pretrained_examples.py` vygenerujete 1000 anime obrázků.
 Vygenerování textu nepodmíněně
 ```
 python src/generate_unconditional_samples.py --top_k 40 --temperature 0.9 --nsamples 2 --seed 0 --model_name monogatari
-python src/generate_unconditional_samples.py --top_k 40 --temperature 0.9 --nsamples 2 --seed 0 --model_name mnaruto
+python src/generate_unconditional_samples.py --top_k 40 --temperature 0.9 --nsamples 2 --seed 0 --model_name naruto
 python src/generate_unconditional_samples.py --top_k 40 --temperature 0.9 --nsamples 2 --seed 0 --model_name overlord
 ```
 
@@ -88,4 +98,3 @@ Podmíněné generování textu
 ```
 python src/interactive_conditional_samples.py --top_k 40 --temperature 0.9  --seed 2000 --model_name monogatari
 ```
-
