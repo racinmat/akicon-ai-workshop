@@ -1,5 +1,16 @@
 # Machine learning workshop
 
+## Zdrojové kódy
+Zdrojové kódy naleznete zde
+- https://github.com/racinmat/stylegan
+- https://github.com/racinmat/gpt-2
+jsou to forky větších repozitářů s úpravami, aby inference běžela na CPU, a se skripty na parsování titulkůl pro tvorbu datasetů.
+
+## Naučené modely
+Naučené modely si stahněte a rozbalte
+- do složky s gpt-2 zdrojovými kódy: https://uloz.to/file/qAOAep7N9gxs/gpt-2-models-zip
+- do složky se stylegan zdrojovými kódy: https://uloz.to/file/QOHFtiFBEvhe/stylegan-models-zip
+
 ## Instalace
 
 Instalovat budeme následující věci:
@@ -26,6 +37,7 @@ https://medium.com/@naarkie/using-tensorflow-gpu-on-a-compute-3-0-graphics-card-
     - https://medium.com/@mccann.matt/compiling-tensorflow-with-cuda-3-0-support-42d8fe0bf3b5
 
 ### Instalace Anacondy
+- Pokud už máte python, nejspíše netřeba, ale pohlídejte si, že máte 64bit verzi pythonu
 - Anaconda, python 3.7, https://www.anaconda.com/distribution/
     - windows: https://repo.anaconda.com/archive/Anaconda3-2019.07-Windows-x86_64.exe
     - linux: https://repo.anaconda.com/archive/Anaconda3-2019.07-Linux-x86_64.sh
@@ -85,6 +97,8 @@ Spuštěním `python pretrained_example.py` vygenerujete lidskou fotku.
 Spuštěním `python pretrained_example_anime.py` vygenerujete anime obrázek.
 Spuštěním `python pretrained_examples.py` vygenerujete 1000 anime obrázků.
 
+Spuštěním `jupyter notebook` a a v něm notebooku `Stylegan-Interactive-Modification.ipynb` se dostanete k interaktivnímu generování.
+
 ### Generování textů
 
 Vygenerování textu nepodmíněně
@@ -98,3 +112,4 @@ Podmíněné generování textu
 ```
 python src/interactive_conditional_samples.py --top_k 40 --temperature 0.9  --seed 2000 --model_name monogatari
 ```
+
