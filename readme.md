@@ -1,5 +1,7 @@
 # Machine learning workshop
 
+Zdrojové kódy k workshopu během https://akicon.cz/ 2019 demonstrující generativní neuronové modely.
+
 ## Instalace
 
 Instalovat budeme následující věci:
